@@ -200,7 +200,7 @@ function SignDemo() {
             {open && (
                 <Alert onClose={() => setOpen(false)} severity="success" sx={{ width: '100%', marginTop: 1 }}>
                     Success! You can confirm your transfer on{' '}
-                    <a target="_blank" rel="noreferrer" href={`https://nile.tronscan.org/#/address/${address}`}>
+                    <a target="_blank" rel="noreferrer" href={`https://tronscan.org/#/address/${address}`}>
                         Tron Scan
                     </a>
                 </Alert>
