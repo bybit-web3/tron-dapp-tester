@@ -1,6 +1,5 @@
 {
   "name": "react-ui-vite",
-  "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
@@ -10,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@bybit-wallet/tronwallet-adapter-bybit-wallet": "^1.0.0",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@mui/material": "^5.10.10",

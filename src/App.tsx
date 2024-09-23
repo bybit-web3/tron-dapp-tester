@@ -12,6 +12,8 @@ import {
 import toast from 'react-hot-toast';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TextField, Alert } from '@mui/material';
 import { TronLinkAdapter, TokenPocketAdapter, BitKeepAdapter, OkxWalletAdapter } from '@tronweb3/tronwallet-adapters';
+import { BybitWalletAdapter } from '@bybit-wallet/tronwallet-adapter-bybit-wallet'
+
 import { WalletConnectAdapter } from '@tronweb3/tronwallet-adapter-walletconnect';
 import { LedgerAdapter } from '@tronweb3/tronwallet-adapter-ledger';
 import { tronWeb } from './tronweb';
@@ -85,7 +87,8 @@ export function App() {
         const tokenPocket = new TokenPocketAdapter();
         const bitKeep = new BitKeepAdapter();
         const okxWalletAdapter = new OkxWalletAdapter();
-        return [tronLink1, walletConnect1, ledger, tokenPocket, bitKeep, okxWalletAdapter];
+        const bybitWalletAdapter = new BybitWalletAdapter();
+        return [tronLink1, walletConnect1, ledger, tokenPocket, bitKeep, okxWalletAdapter, bybitWalletAdapter];
     }, []);
     function onConnect() {
         console.log('onConnect');
