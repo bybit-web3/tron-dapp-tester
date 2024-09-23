@@ -162,7 +162,7 @@ function SignDemo() {
     const { signMessage, signTransaction, address } = useWallet();
     const [message, setMessage] = useState('');
     const [signedMessage, setSignedMessage] = useState('');
-    const receiver = 'TMDKznuDWaZwfZHcM61FVFstyYNmK6Njk1';
+    const receiver = 'TDEyGP5z9y3bjMvarAzdyJqd4qjoYZBEYn';
     const [open, setOpen] = useState(false);
 
     async function onSignMessage() {
